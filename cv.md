@@ -11,4 +11,4 @@ __*Also you can send me message in \"Whatsapp\" or \"Viber\" on phone number spe
 
 __A LITTLE BIT ABOUT MYSELF.__
 
-I have one aim, it's study and develop like front end developer. And in future I want became full stack developer. In current, I know not bad languages like __*"HTML"*__, __*"CSS"*__, __*"JavaScript"*__ and __*"Node JS(Express)"*__. I can work in __*"PhotoShop"*__ and __*"Figma"*__. Unfortunately, I don't have commercial experience development, but I have several training projects and very big wish and aspiration to study. I always try improve my skills in programming and English.
+I have one aim, it's study and develop like front end developer. I am very fastly catching new knowledges, purposeful (try always achieve what I think), responsible and community (I like meeting different people and talk on common themes and just everything). In future I want became full stack developer and I will be hard work for it. Unfortunately, I don't have commercial experience development, but I have several training projects and very big wish and aspiration to study. I always try improve my skills in programming and English.
