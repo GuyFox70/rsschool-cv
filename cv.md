@@ -107,3 +107,7 @@ This is HTML, where I plugged styles, scripts and into tag 'body' placed tag 'se
   ```
                 
 In code above, I assign main class and constructor of class. In the constructor, I defined variables and start base method, which begin game. Full code you can find in Github. It was my first time, when I use OOP in javascript.
+
+## My education
+
+I graduated MISIS National University of Science and Technology, department 'Electrical and Energetic'. In the university, I began to learn programming microcontrollers, then web programming. Everything I know, I studied myself with internet.
