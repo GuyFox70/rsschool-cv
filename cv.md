@@ -1,6 +1,6 @@
 # Artem Orlov
 
-![Orlov Artem Sergeevich](https://github.com/GuyFox70/images/blob/master/K7ldyUj85UM.jpg)
+![Orlov Artem Sergeevich](https://github.com/GuyFox70/images/blob/master/K7ldyUj85UM.jpg?raw=true)
 
 For connect with me, you can to use following ways:
 
