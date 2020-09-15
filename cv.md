@@ -24,6 +24,9 @@ __*Now about my skills*.__
   * Express
   * React
 * __Ahother__
+  * SCSS
+  * Gulp
+  * Jade
   * Socket (socket.io)
   * Git
   * PhotoShop
