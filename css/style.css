@@ -1,11 +1,16 @@
-@font-face {
-  font-family: "Lato-Light";
-  src: url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.woff2") format("woff2");
+@font-face { 
+  font-family: "Lato-Bold";
+  src: url('../fonts/Lato-Bold.woff') format("woff"), url('../fonts/Lato-Bold.woff2') format("woff2");
 }
 
-@font-face {
+@font-face { 
+  font-family: "Lato-Light";
+  src: url('../fonts/Lato-Light.woff') format("woff"), url('../fonts/Lato-Light.woff2') format("woff2");
+}
+
+@font-face { 
   font-family: "Mukta-ExtraBold";
-  src: url("../fonts/Mukta-ExtraBold.woff") format("woff"), url("../fonts/Mukta-ExtraBold.woff2") format("woff2");
+  src: url('../fonts/Mukta-ExtraBold.woff') format("woff"), url('../fonts/Mukta-ExtraBold.woff2') format("woff2");
 }
 
 html {
@@ -94,6 +99,49 @@ body {
   background: #7d64a7;
   vertical-align: middle;
   margin: 0 25px 10px 0;
+}
+
+.middle {
+  display: grid;
+  grid-template-areas: "feature resume";
+  grid-template-columns: 35% 65%;
+}
+
+.middle__common-data {
+  background: #e0e0e1;
+  padding: 7% 15% 0 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-area: feature;
+}
+
+.middle__contact-data {
+  margin-bottom: 10%;
+}
+
+.middle__name-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Lato-Bold';
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.middle__text {
+  font-family: 'Lato-Light';
+  font-size: 42px;
+  line-height: 60px;
+  color: #1f2222;
+}
+
+.middle__resume {
+  grid-area: resume;
 }
 
 @media screen and (max-width: 2128px) {
