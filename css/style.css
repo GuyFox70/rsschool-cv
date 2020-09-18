@@ -1,16 +1,21 @@
-@font-face { 
+@font-face {
   font-family: "Lato-Bold";
-  src: url('../fonts/Lato-Bold.woff') format("woff"), url('../fonts/Lato-Bold.woff2') format("woff2");
+  src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
 }
 
-@font-face { 
+@font-face {
   font-family: "Lato-Light";
-  src: url('../fonts/Lato-Light.woff') format("woff"), url('../fonts/Lato-Light.woff2') format("woff2");
+  src: url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.woff2") format("woff2");
 }
 
-@font-face { 
+@font-face {
   font-family: "Mukta-ExtraBold";
-  src: url('../fonts/Mukta-ExtraBold.woff') format("woff"), url('../fonts/Mukta-ExtraBold.woff2') format("woff2");
+  src: url("../fonts/Mukta-ExtraBold.woff") format("woff"), url("../fonts/Mukta-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2");
 }
 
 html {
@@ -47,16 +52,23 @@ body {
 .top__avatar {
   padding: 0 10%;
   background: #e0e0e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-area: avatar;
 }
 
 .top__images {
   width: 70%;
   height: 70%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .top__personal-data {
@@ -144,7 +156,6 @@ body {
   display: block;
   text-decoration: none;
   color: #1f2222;
-
   font-family: 'Lato-Light';
   font-size: 42px;
   line-height: 60px;
@@ -159,7 +170,7 @@ body {
   display: inline-block;
   width: 5vw;
   height: 10vh;
-  background: url('../img/vk.png') no-repeat center;
+  background: url("../img/vk.png") no-repeat center;
   background-size: contain;
   vertical-align: middle;
   margin: 0 50px 0 0;
@@ -170,7 +181,7 @@ body {
   display: inline-block;
   width: 5vw;
   height: 10vh;
-  background: url('../img/facebook.png') no-repeat center;
+  background: url("../img/facebook.png") no-repeat center;
   background-size: contain;
   vertical-align: middle;
   margin: 0 50px 0 0;
@@ -181,7 +192,7 @@ body {
   display: inline-block;
   width: 5vw;
   height: 10vh;
-  background: url('../img/instagram.png') no-repeat center;
+  background: url("../img/instagram.png") no-repeat center;
   background-size: contain;
   vertical-align: middle;
   margin: 0 50px 0 0;
@@ -192,7 +203,7 @@ body {
   display: inline-block;
   width: 5vw;
   height: 10vh;
-  background: url('../img/whatsapp.png') no-repeat center;
+  background: url("../img/whatsapp.png") no-repeat center;
   background-size: contain;
   vertical-align: middle;
   margin: 0 50px 0 0;
@@ -259,7 +270,52 @@ body {
 }
 
 .middle__resume {
+  padding: 7% 10% 4% 9%;
   grid-area: resume;
+}
+
+.middle__info:not(:last-child) {
+  margin-bottom: 5%;
+}
+
+.middle__info > h2 {
+  color: #7d64a7;
+  font-family: 'Lato-Bold';
+  font-size: 58px;
+  line-height: 47px;
+}
+
+.middle__info > h2::before {
+  content: "";
+  display: inline-block;
+  width: 1vw;
+  height: 1vw;
+  background: #7d64a7;
+  vertical-align: middle;
+  margin: 0 25px 10px 0;
+}
+
+.middle__info > p {
+  padding: 0;
+  margin: 2% 0 0 4%;
+  color: #1f2222;
+  font-family: 'Roboto-Regular';
+  font-size: 42px;
+  line-height: 58px;
+}
+
+.middle__info .middle__name-educational-institution,
+.middle__info .middle__period {
+  margin: 0 0 0 4%;
+}
+
+.middle__info .middle__name-department,
+.middle__info .middle__period {
+  font-size: 30px;
+}
+
+.middle__info .middle__name-educational-institution {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 2128px) {
