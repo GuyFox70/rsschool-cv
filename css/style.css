@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Mukta-ExtraBold";
+  src: url("../fonts/Mukta-ExtraBold.woff") format("woff"), url("../fonts/Mukta-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2");
+}
+
+html {
+  font-size: calc(15px + 0.1vw);
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  max-width: 2630px;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: #ffff;
+  margin: auto;
+}
+
+.top {
+  display: grid;
+  grid-template-areas: "avatar personal-data";
+  grid-template-columns: 35% 65%;
+}
+
+.top__avatar {
+  padding: 0 10%;
+  background: #e0e0e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: avatar;
+}
+
+.top__images {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.top__personal-data {
+  background: #f0f0f1;
+  padding: 2% 10% 4% 9%;
+  grid-area: personal-data;
+}
+
+.top__full-name {
+  margin: 0 0 3% 0;
+  font-size: calc(18px + 3.8vw);
+  line-height: 164px;
+  letter-spacing: 23px;
+}
+
+.top__name {
+  color: #7d64a7;
+  font-family: 'Mukta-ExtraBold';
+}
+
+.top__surname {
+  display: block;
+  color: #1f2222;
+  font-family: 'Mukta-ExtraBold';
+}
+
+.top__job {
+  font-family: 'Lato-Light';
+  font-size: calc(18px + 1.3vw);
+  line-height: 55px;
+  letter-spacing: 2.7px;
+  color: #1f2222;
+}
+
+.top__job::before {
+  content: "";
+  display: inline-block;
+  width: 1vw;
+  height: 1vw;
+  background: #7d64a7;
+  vertical-align: middle;
+  margin: 0 25px 10px 0;
+}
